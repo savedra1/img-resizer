@@ -7,6 +7,14 @@ def main():
         sys.exit('No img path provided.')
     elif len(sys.argv) > 5: 
         sys.exit('Too mangs args provided.')
+    elif sys.argv[1] == '--help':
+        print("""Available commands:\n
+        | resizer <img path> : Saves specified image as 512x512px in CWD\n
+        | resizer <img path> small : Saves specified image as 512x512px in CWD\n   
+        | resizer <img path> medium : Saves specified image as 1000x1000px in CWD\n    
+        | resizer <img path> big : Saves specified image as 2000x2000px in CWD\n
+        | resizer <img path> custom <int> <int> : Saves specified image as <int>x<int>px in CWD\n      
+        """)
 
     try:
         img = Image.open(sys.argv[1])
