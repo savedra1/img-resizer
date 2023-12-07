@@ -1,4 +1,5 @@
 from PIL import Image
+
 import sys
 import os.path
 
@@ -39,7 +40,6 @@ def main():
                 size = (512, 512)
     else:
         size = (512, 512)
-
     
     try:
         img.resize(size)
