@@ -15,7 +15,8 @@ pip install resize-img
 - `resize-img $IMG_PATH big` Saves specified image as 2000x2000px in CWD
 - `resize-img $IMG_PATH custom <int> <int>` Saves specified image as <int>px<int>px in CWD
 
-## Deploy your own package
+
+## Deploy your own PyPi package with GitHub Actions
 **Prerequisites**:
 - A [PyPi API token](https://pypi.org/manage/account/token/)
 - A [GitHub account](https://github.com/join)
