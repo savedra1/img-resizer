@@ -22,7 +22,7 @@ def main():
     try:
         img = Image.open(sys.argv[1])
     except Exception:
-        sys.exit(f'Could not open image {img}')
+        sys.exit(f'Could not open image {sys.argv[1]}')
 
     if len(sys.argv) > 2 :
         match sys.argv[2]:
