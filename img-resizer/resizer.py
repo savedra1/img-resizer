@@ -42,7 +42,7 @@ def main():
         size = (512, 512)
     
     try:
-        img.resize(size)
+        img = img.resize(size)
     except Exception as err:
         sys.exit(f'Failed to save image: {err}')
 
