@@ -1,3 +1,5 @@
+# main.py
+
 from PIL import Image
 
 import sys
