@@ -6,6 +6,7 @@ with open('requirements.txt') as requirements_file:
 with open('README.md', 'r') as read_me_file:
     description = read_me_file.read()
 
+
 setup(
     name='img-resizer',
     version='0.1',
@@ -15,7 +16,7 @@ setup(
     ],
     entry_points = {
         'console_scripts': [
-            'img-resizer = img-resizer:main'
+            'img-resizer = img_resizer.main:main'
         ]
     },
     long_description = description,
