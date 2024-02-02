@@ -9,14 +9,14 @@ with open('README.md', 'r') as read_me_file:
 
 setup(
     name='resize_img',
-    version='0.1',
+    version='0.2',
     packages=find_packages(),
     install_requires=[
         requirements
     ],
     entry_points = {
         'console_scripts': [
-            'img-resizer = img_resizer.main:main'
+            'resize-img = img_resizer.main:main'
         ]
     },
     long_description = description,
