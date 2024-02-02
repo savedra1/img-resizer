@@ -46,29 +46,33 @@ def main():
     except Exception as err:
         sys.exit(f'Failed to save image: {err}')
 
-    resized_name = sys.argv[1]
-    if resized_name[-1] == '/':
-        resized_name = resized_name[:-1]
+    file_name = sys.argv[1]
+    if file_name[-1] == '/':
+        file_name = file_name[:-1]
 
-    if '/' in resized_name:
-        resized_name = sys.argv[1].split('/')[-1] 
+    if '/' in file_name:
+        file_name = file_name.split('/')[-1] 
+    
+    file_preface, dot, file_extension = file_name.partition('.')
 
-    resized_name = resized_name.split('.')[0] + 'RESIZED' + f'.{resized_name.split(".")[1]}'     
+    resized_name = f'{file_preface}_RESIZED.{file_extension}'     
 
     if os.path.isfile(resized_name):
         name_exists_in_dir = True
         attempts = 1
         while name_exists_in_dir:
-            resized_name = resized_name.split('.')[0] + str(attempts) + f'.{resized_name.split(".")[1]}'
+            resized_name = f'{resized_name.split(dot)[0]} ({str(attempts)}).{file_extension}'
             if not os.path.isfile(resized_name):
                 name_exists_in_dir = False
-            attempts += 1 
+            else:
+                resized_name = f'{file_preface}_RESIZED.{file_extension}'
+                attempts += 1 
 
     try:
         img.save(resized_name)
         print(f'Saved image as {resized_name}')
     except Exception:
-        print(f'Failed to save img as {resized_name}')
+        print(f'Failed to save img as {resized_name}.')
 
 if __name__ == "__main__":
     main()
