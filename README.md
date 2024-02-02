@@ -1,7 +1,7 @@
-# A simple image resizing CLI
+# A simple image resizing CLI - PyPi package deployemnt CI example 
 
 ### About
-Just testing to see how distributing Python packages via Github would work. This example is a simple CLI tool I built many moons ago that allows you to easily resize any image file from the command line. Feel free to use this if you think it would be useful but you're probably better off with [ImageMagick](https://github.com/ImageMagick/ImageMagick).
+This project is used for an example of how to deploy a Python package to PyPi using GitHub Actions. The example package is a simple CLI tool I built many moons ago that allows you to easily resize any image file from the command line. Feel free to use this if you think it would be useful but you're probably better off with [ImageMagick](https://github.com/ImageMagick/ImageMagick).
 
 ### Installation 
 ```
@@ -15,3 +15,5 @@ pip install resize-img
 - `resizer $IMG_PATH big` Saves specified image as 2000x2000px in CWD
 - `resizer $IMG_PATH custom <int> <int>` Saves specified image as <int>px<int>px in CWD
 
+## Staging package deployment 
+---- TBC
