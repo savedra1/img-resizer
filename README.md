@@ -18,10 +18,12 @@ pip install resize-img
 
 ## Deploy your own PyPi package with GitHub Actions
 **Prerequisites**:
+
 - A [PyPi API token](https://pypi.org/manage/account/token/)
 - A [GitHub account](https://github.com/join)
 
 **Setup instructions**
+
 Examples to each of the following steps can be found in this repository in the referenced locations.
 
 1. Add your PyPi username as password to a GitHub repo's environment as secrets.
