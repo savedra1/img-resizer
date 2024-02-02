@@ -6,10 +6,9 @@ with open('requirements.txt') as requirements_file:
 with open('README.md', 'r') as read_me_file:
     description = read_me_file.read()
 
-
 setup(
     name='resize_img',
-    version='0.2',
+    version='0.3',
     packages=find_packages(),
     install_requires=[
         requirements
