@@ -1,4 +1,3 @@
-
 name: Release on merge to main
 
 on:
@@ -32,6 +31,5 @@ jobs:
         cd img-resizer && pwd && cd ..
         python -m twine upload img-resizer/dist/*
 
-###
 
         
