@@ -10,7 +10,7 @@ pip install resize-img
 
 ### Commands
 - `resize-img $IMG_PATH` Saves a new, resized image of the specified image path to the CWD, using the default size of 512x512px.
-- `resize-img $IMG_PATH small` Saves specified image as 512x512px in CWD.   
+- `resize-img $IMG_PATH small` Saves specified image as 250x250px in CWD.   
 - `resize-img $IMG_PATH medium` Saves specified image as 1000x1000px in CWD.
 - `resize-img $IMG_PATH big` Saves specified image as 2000x2000px in CWD.
 - `resize-img $IMG_PATH custom <int> <int>` Saves specified image as <int>px<int>px in CWD.
