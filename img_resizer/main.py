@@ -18,16 +18,17 @@ def main():
         | resize-img <img path> big : Saves specified image as 2000x2000px in CWD\n
         | resize-img <img path> custom <int> <int> : Saves specified image as <int>x<int>px in CWD\n      
         """)
-
+        sys.exit()
+        
     try:
         img = Image.open(sys.argv[1])
     except Exception:
-        sys.exit(f'Could not open image {sys.argv[1]}')
+        sys.exit(f'Could not open image {sys.argv[1]}. Please check path.')
 
     if len(sys.argv) > 2 :
         match sys.argv[2]:
             case "small":
-                size = (512, 512)
+                size = (250, 250)
             case "medium":
                 size = (1000, 1000)
             case "big":
@@ -36,7 +37,7 @@ def main():
                 try: 
                     size = (int(sys.argv[3]), int(sys.argv[4]))
                 except Exception:
-                    sys.exit('Not enough args provided for custom. Needs int int.')
+                    sys.exit('Not enough args provided for custom. Needs <int> <int>.')
             case _:
                 size = (512, 512)
     else:
