@@ -8,7 +8,7 @@ with open('README.md', 'r') as read_me_file:
 
 setup(
     name='resize_img',
-    version='0.5',
+    version='0.6',
     packages=find_packages(),
     install_requires=[
         requirements
@@ -22,4 +22,4 @@ setup(
     long_description_content_type = 'text/markdown'
 )
 
-# v0.5 - Better exception handle and chanes to description 
+# v0.6 - Better exception handle and chanes to description 
