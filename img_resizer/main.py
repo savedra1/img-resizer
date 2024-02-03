@@ -73,10 +73,10 @@ def main():
     try:
         img.save(resized_name)
         print(f'Saved image as {resized_name}')
-    except Exception:
-        print(f'Failed to save img as {resized_name}.')
+    except Exception as err:
+        print(f'Failed to save img as \'{resized_name}\':\n{str(err)}')
 
 if __name__ == "__main__":
     main()
 
-##
+

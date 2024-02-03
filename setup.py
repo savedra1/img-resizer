@@ -21,3 +21,5 @@ setup(
     long_description = description,
     long_description_content_type = 'text/markdown'
 )
+
+# v0.5 - Better exception handle and chanes to description 
