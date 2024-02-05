@@ -30,8 +30,7 @@ jobs:
       - name: Build and publish
         run: |
           python setup.py sdist bdist_wheel
-          pwd
-          cd img-resizer && pwd && cd ..
+          cd img-resizer && ls -a && cd ..
           python -m twine upload dist/*
 
         

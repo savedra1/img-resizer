@@ -8,7 +8,7 @@ with open('README.md', 'r') as read_me_file:
 
 setup(
     name='resize_img',
-    version='0.6',
+    version='0.7',
     packages=find_packages(),
     install_requires=[
         requirements
